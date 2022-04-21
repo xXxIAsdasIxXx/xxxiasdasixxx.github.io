@@ -2,12 +2,15 @@
 .nav-bar {
     background-color: #1da41d;
     display: flex;
-    width: 12%;
     min-width: 200px;
     max-width: 350px;
     align-content: center;
     align-items: center;
     height: 98vh;
+}
+
+.green {
+    background-color: #1da41d;
 }
 /* create a class called "nav-bar-item" which is pastel green, and has a height of 70px, and is centered and has a 10px gap with the items in its left*/
 
