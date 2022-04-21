@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>YemekTarifleri | ⭐'LI TARİFLER</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="HELLO WORLD">
+        <style>
+            .TopNavBarLine {
+                height: 40px;
+                position: relative;
+                left: 0px;
+                bottom: 0px;
+                width: 2px;
+                background-color: #fff;
+            }
+            td.NavbarBackground{
+                position: relative;
+                left:30px;
+                bottom:-5px;
+            }
+            div.NavbarButton{
+                position: relative;
+                height:40px;
+                background-color: rgba(88, 0, 0, 0.157);
+            }
+            a.NavbarButtonText{
+                text-decoration-line: none;
+                font-size: 20px;
+                font-family: "Helvetica Neue",Helvetica;
+                color:#ffffff;
+                font:bold;
+                position: relative;
+                left: 10px;
+                top:-30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style = "background-color: #d15252;position:relative;height:100px;">
+        <div style = "background-color: rgba(88, 0, 0, 0.157);position: relative;height:20px;top:80px"></div>
+            <aside style = "position:relative;bottom: 25px">
+                <table style = "size: 100%;"
+                    <tr>
+                        <!-- LOGO -->
+                        <td style = "position: relative;bottom:0px">
+                            <img src = "images/logo.png" style = "height: 80px;"
+                        </td>
+                        <!-- HOME -->
+                        <td class="NavbarBackground">
+                            <div class = "NavbarButton" style = "width:120px;">
+                                <div class = "TopNavBarLine">
+                                </div>
+                                <a class = "NavbarButtonText" onmouseover="mouseOver(this)" onmouseout = "mouseOut(this)" href = "index.html">
+                                    ANASAYFA
+                                </a>
+                            </div>
+                        </td>
+                        <!-- TARİFLER -->
+                        <td class="NavbarBackground">
+                            <div class = "NavbarButton" style = "width:110px;">
+                                <div class = "TopNavBarLine">
+                                </div>
+                                <a class = "NavbarButtonText" onmouseover="mouseOver(this)" onmouseout = "mouseOut(this)" href = "tarifler.html">
+                                    TARİFLER
+                                </a>
+                            </div>
+                        </td>
+
+                        <!-- ⭐'lı Tarifler -->
+                        <td class="NavbarBackground">
+                            <div class = "NavbarButton" style = "width:165px;">
+                                <div class = "TopNavBarLine">
+                                </div>
+                                <a class = "NavbarButtonText" style="top:-32px" onmouseover="mouseOver(this)" onmouseout = "mouseOut(this)" href = "yildizlitarifler.html">
+                                    ⭐'LI TARİFLER
+                                </a>
+                            </div>
+                        </td>
+                        <script>
+                            function mouseOver(Text) {
+                                var size = Text.parentElement.style.width
+                                Text.style.color = "#d15252";
+                                Text.parentElement.children[0].style.width = size;
+                            }
+                            
+                            function mouseOut(Text) {
+                                Text.style.color = "white";
+                                Text.parentElement.children[0].style.width = "2px";
+                            }
+                        </script>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+    </body>
+</html>
